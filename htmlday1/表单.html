@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>表单多用于登录、注册和搜索</title>
+</head>
+<body>
+    <!-- 
+    标签名  type属性值      说明
+    input    text        文本框，用于输入单行文本
+    input    password    密码框，用于输入密码
+    input    radio       单选框，用于多选一
+    input    checkbox    多选框，用于多选多
+    input    file        文件选择，用于之后上传文件
+    input    submit      提交按钮，用于提交
+    input    reset       重置按钮，用于重置
+    input    button      普通按钮，默认无功能，之后配合js添加功能
+    
+    placeholder 占位符，提示用户输入内容
+    name        分组，有相同name属性值的单选框为一组，一组中同时只能一个被选中
+    checked     默认选中
+    multiple    多文件选择
+-->
+    <form action="">
+        用户名：<input type="text" placeholder="用户名"><br><br>
+        密码：<input type="password" placeholder="密码"><br><br>
+        性别：  <input type="radio" name="sex" id="nan"><label for="nan">男</label> 
+                <label><input type="radio" name="sex">女</label><br><br>
+        多选: <input type="checkbox" name="" id="" checked><br><br>
+        文件：<input type="file" name="" id="" multiple><br><br>
+        <!-- 按钮 
+        input    submit      提交按钮，用于提交
+        input    reset       重置按钮，用于重置
+        input    button      普通按钮，默认无功能，之后配合js添加功能
+        form    是表单父级标签
+        -->
+        <input type="submit" value="免费注册">
+        <input type="reset">
+        <input type="button" value="*"><br>
+        <button type="submit">提交按钮</button>
+        <button type="reset">重置按钮</button>
+        <button type="button">普通按钮</button>
+        <button>按钮</button><br><br>
+        <!-- 下拉菜单 -->
+        <select>
+            <option>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option selected>深圳</option>
+        </select><br><br>
+        <!-- 文本域标签 -->
+        <textarea name="" id="" cols="20" rows="10"></textarea>
+    </form>
+</body>
+</html>

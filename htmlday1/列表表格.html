@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表表格</title>
+</head>
+<body>
+    <!-- 无序列表ul -->
+    <ul>
+        <li>榴莲</li>
+        <li>苹果</li>
+        <li>香蕉</li>
+    </ul>
+    <!-- 有序列表ol -->
+    <ol>
+        <li>张三：100</li>
+        <li>李四：80</li>
+        <li>王五：60</li>
+    </ol>
+    <!-- 自定义列表
+        dl表示自定义列表的整体，用于包裹dt/dd标签
+        dt表示列表的主题
+        dd表示自定义列表的针对主题的每一项内容
+    -->
+    <dl>
+        <dt>帮助中心</dt>
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+    </dl>
+    <!-- 表格的基本标签
+        table 表格整体，可用于包裹多个tr
+        tr 表格每行，可用于包裹td
+        td 表格单元格，可用于包裹内容
+        table > tr > td
+        border 给表格边框
+        caption 表格大标题
+        th 表头单元格
+        thead 表格头部
+        tbody 表格主体
+        tfoot 表格底部
+        rowspan 跨行合并，将多行的单元格垂直合并（合并只需保留第一个值）
+        colspan 跨列合并,将多列的单元格水平合并
+        合并不能跨 thead tbody tfoot
+    -->
+    <table border = "1" width = "500" hight = "300">
+        <caption><b>学生成绩单</b></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>80</td>
+                <td rowspan="2">好</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="2">好</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
