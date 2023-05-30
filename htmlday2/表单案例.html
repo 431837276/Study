@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    form    是表单父级标签
+    标签名  type属性值      说明
+    input    text        文本框，用于输入单行文本
+    input    password    密码框，用于输入密码
+    input    radio       单选框，用于多选一
+    input    checkbox    多选框，用于多选多
+    input    file        文件选择，用于之后上传文件
+    input    submit      提交按钮，用于提交
+    input    reset       重置按钮，用于重置
+    input    button      普通按钮，默认无功能，之后配合js添加功能
+    
+    placeholder 占位符，提示用户输入内容
+    name        分组，有相同name属性值的单选框为一组，一组中同时只能一个被选中
+    checked     默认选中
+    multiple    多文件选择
+-->
+    <h1>你好</h1>
+    <hr>
+    <form action="">
+        昵称: <input type="text" placeholder="请输入昵称"></body><br><br>
+        性别: <label><input type="radio" name="sex">男</label>
+                <label><input type="radio" name="sex">女</label><br><br>
+        所在城市: <select>
+            <option>北京</option>
+            <option selected>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+        </select><br><br>
+        婚姻状况:
+        <label><input type="radio" name = "hy">未婚</label>
+        <label><input type="radio" name = "hy">已婚</label>
+        <label><input type="radio" name = "hy">保密</label><br><br>
+        喜欢的类型:
+        <label><input type="checkbox">可爱</label>
+        <label><input type="checkbox">性感</label>
+        <label><input type="checkbox">御姐</label>
+        <label><input type="checkbox">萝莉</label>
+        <label><input type="checkbox">小鲜肉</label>
+        <label><input type="checkbox">大叔</label><br><br>
+        个人介绍:<br>
+        <textarea name="" id="" cols="45" rows="10"></textarea>
+        <h3>我承诺</h3>
+        <ul>
+            <li>年满18岁，单身</li>
+            <li>抱着严肃的态度</li>
+            <li>真心寻找另一半</li>
+        </ul><br>
+        <input type="checkbox">我同意所有条款
+    </form>
+</body>
+</html>

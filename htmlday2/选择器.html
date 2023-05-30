@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器就是以标签命名的选择器，会将所有标签修饰*/
+        /* 类选择器结构为：.类名{css属性名:属性值;} */
+        /* id选择器结构为：#id属性值{css属性名:属性值;} 该选择器只能一对一 */
+        /* 通配符选择器结构为：*{css属性名：属性值;}  一般用于去除内外边距 */
+        /* font: style weight size/line-height family; */
+        /* 并集选择器 选择器1 选择器2 {} */
+        /* 指向性选择器 选择器1>选择器2 */
+        /* 父子级 父选择器 子选择器 */
+        /* 交集选择器 选择器1,选择器2 */
+        /* hover 伪类选择器 选择器:hover{css} */
+        p{
+            color:black;
+            text-indent: 2em;
+        }
+        .red{
+            color:red;
+            color:pink;
+        }
+        .size{
+            font-size: 66px;
+        }
+        #two{
+            color: aqua;
+            font-size: 33px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .center{
+            text-align: center;
+        }
+        div{
+            width:300px;
+            height:300px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <p>你好</p>
+    <!-- 一个标签可以使用多个类名，但需要用空格隔开 -->
+    <p class="red size">世界</p>
+    <p id="two">再见</p>
+    <p class="center">新闻标题</p>
+    <div></div>
+</body>
+</html>

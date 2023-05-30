@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息表</title>
+</head>
+<body>
+    <!-- 表格的基本标签
+        table 表格整体，可用于包裹多个tr
+        tr 表格每行，可用于包裹td
+        td 表格单元格，可用于包裹内容
+        table > tr > td
+        border 给表格边框
+        caption 表格大标题
+        th 表头单元格
+        thead 表格头部
+        tbody 表格主体
+        tfoot 表格底部
+        rowspan 跨行合并，将多行的单元格垂直合并（合并只需保留第一个值）
+        colspan 跨列合并,将多列的单元格水平合并
+        合并不能跨 thead tbody tfoot
+    -->
+    <table border="1" width = "500" height = "300">
+        <caption><h3>优秀学生信息表格</h3></caption>
+        <thead>
+            <tr>
+                <th>年级</th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>班级</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">高三</td>
+                <td>张三</td>
+                <td>110</td>
+                <td>三年二班</td>
+            </tr>
+            <tr>
+                <td>赵四</td>
+                <td>120</td>
+                <td>三年三班</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>评语</th>
+                <th colspan="3">你们都很优秀</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
